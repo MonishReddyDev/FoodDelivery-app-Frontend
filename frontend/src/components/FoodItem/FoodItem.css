@@ -51,16 +51,18 @@
   position: absolute;
   bottom: 15px;
   right: 10px;
-  width: 100px;
-  height: 40px;
   display: flex;
   justify-content: right;
-  height: 40px;
+  height: 30px;
   align-items: center;
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
+.add_icon_white .icon {
+  height: 35px;
+  width: 35px;
+}
 .counter-pill {
   position: absolute;
   bottom: 15px;
