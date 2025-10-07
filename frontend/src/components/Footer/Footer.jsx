@@ -6,10 +6,10 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="logo" />
+          <img src={assets.footerlogo} alt="logo" className="logo" />
           <p>
-            Tomato is your trusted partner for fresh produce delivery. Bringing
-            quality and taste to your doorstep since 2020.
+            DashEats is your trusted partner for fresh produce delivery.
+            Bringing quality and taste to your doorstep since 2020.
           </p>
           <div className="footer-social-icon">
             <img src={assets.facebook_icon} alt="facebook" />
@@ -31,16 +31,16 @@ const Footer = () => {
           <h2>Get in Touch</h2>
           <ul>
             <li>+1 (555) 123-4567</li>
-            <li>info@tomato.com</li>
+            <li>info@dashEats.com</li>
             <li>
-              <span>123 Tomato Lane, Veggie City, Country</span>
+              <span>123 DashEats Lane, Veggie City, Country</span>
             </li>
           </ul>
         </div>
       </div>
       <hr className="hr" />
       <p className="footer-copyright">
-        &copy; {new Date().getFullYear()} Tomato Inc. All rights reserved.
+        &copy; {new Date().getFullYear()} DashEats Inc. All rights reserved.
       </p>
     </div>
   );

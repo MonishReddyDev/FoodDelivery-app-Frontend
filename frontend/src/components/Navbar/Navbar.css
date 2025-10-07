@@ -5,8 +5,9 @@
   align-items: center;
 }
 
-.navbar .logo {
+.logo {
   width: 150px;
+  size: 30px;
 }
 
 .navbar-menu {
