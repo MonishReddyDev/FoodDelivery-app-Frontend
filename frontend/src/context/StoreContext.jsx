@@ -38,13 +38,28 @@ const StoreContextProvider = ({ children }) => {
     });
   };
 
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+    for (const itemId in cart) {
+      if (cart[itemId].count > 0) {
+        // Use _id if that's what food_list uses
+        let itemInfo = food_list.find((product) => product._id === itemId);
+        if (itemInfo) {
+          totalAmount += itemInfo.price * cart[itemId].count;
+        }
+      }
+    }
+    return totalAmount;
+  };
+
   console.log("🛒 Cart:", cart);
-  
+
   const contextValue = {
     food_list,
     cart,
     addToCart,
     removeFromCart,
+    getTotalCartAmount,
   };
 
   return (
